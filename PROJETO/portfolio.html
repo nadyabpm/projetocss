@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scaled=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+        <link rel="Stylesheet" href="portfolio.css">
+        <title>Nádya Vasconcelos Leôncio</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img id="imagem" src="./Minha foto.jpeg" alt="Foto perfil">
+            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/nadyabpm">GitHub</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/n%C3%A1dya-vasconcelos-le%C3%B4ncio/">LinkedIn</a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:nadyabpm@hotmail.com">E-mail</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/83988616902">WhatsApp</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="container">
+                <div class="nome">
+                    <h1>Nádya Vasconcelos Leôncio</h1>
+                    <h5>Developer</h5>
+                </div>
+                <div onclick="displaySobre()" id="seta">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div style="display: none;" id="sobre">
+                    <p>Sou uma licenciada em Matemática, com pós-graduação em Didáticca do Ensino da Matemática, que decidiu migrar de carreira. Desde a metade do ano de 2021 venho derrubando as barreiras que encontro pelo caminho para conseguir alcançar meus objetivos.</p>
+                </div>
+                <div class="formulario">
+                    <div>
+                        <p id="contato">Deixe seu contato.</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Digite seu e-mail">
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script>
+            function displaySobre(){
+                var display = document.getElementById('sobre');
+                display.classList.toggle('ativar');
+            }
+        </script>
+    </body>
+</html>
+
